@@ -31,7 +31,7 @@ __global__ void vectorAdd(int* A, int* B, int rows, int cols){
 
     //if more to go
     if( index < rows * cols){
-        
+
         int column = index%cols;
         A[index] = A[index] + B[column];
     }
@@ -73,6 +73,7 @@ int main(void){
     bool correct = true;
 
     for (int i = 0; i < rows * cols; i++){
+        
         if (A[i] != soln[i]) {
 
             correct = false;

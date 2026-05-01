@@ -15,6 +15,7 @@ int main(int argc, char** argv){
         i = std::atoi(argv[4]);
     }
     else{
+        
         M = 8;
         P = 4;
         p = 0;

@@ -55,7 +55,7 @@ int main(int argc, char** argv){
 
 
     if(rankL == 0){
-        cout << "--Linear Split--\n";
+        cout << "Linear Split  ";
         cout << "Color = " << linearC;
         cout << ", root rank = " << rank;
         cout << ", sum of ranks = " << sum << endl;
@@ -85,7 +85,7 @@ int main(int argc, char** argv){
 
 
 
-    cout << "--Scatter Split--";
+    cout << "Scatter Split  ";
     cout << "Color = " << scatterC;
     cout << ", scatter rank = " << rankS;
     cout << ", bcast value = " << valueBcast << endl;

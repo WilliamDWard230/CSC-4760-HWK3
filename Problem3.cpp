@@ -31,6 +31,7 @@ int main(int argc, char** argv){
     }
 
        if ( P < 1 || Q < 1 || size != P * Q){
+        
         if(rank == 0){
             cout << "Error with P and/or Q";
         }

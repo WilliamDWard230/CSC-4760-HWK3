@@ -30,7 +30,8 @@ int main(int argc, char** argv){
         M = 15;
     }
 
-       if ( P < 1 || Q < 1 || size != P * Q){
+    if ( P < 1 || Q < 1 || size != P * Q){
+        
         if(rank == 0){
             cout << "Error with P and/or Q";
         }
@@ -95,7 +96,7 @@ int main(int argc, char** argv){
     vector<int> globalX;
 
     int* buffer = nullptr;
-    
+
     //fill in vector
     if(rank==0){
         globalX .resize(M);
